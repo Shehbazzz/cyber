@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button, a, [role="button"], input, select {
+    touch-action: manipulation;
+    pointer-events: auto;
+  }
+  body {
+    @apply bg-matrix-black text-cyber-white font-mono;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1f1f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00ff9d;
+    border-radius: 4px;
+  }
+}
